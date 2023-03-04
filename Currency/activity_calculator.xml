@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dolar (USA)"
+        android:textSize="34sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fcLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USD:" />
+
+            <EditText
+                android:id="@+id/fcAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/hcLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CZK:" />
+
+            <EditText
+                android:id="@+id/hcAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="24sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Spinner
+        android:id="@+id/tax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/taxes"
+        android:spinnerMode="dropdown" />
+
+</LinearLayout>
